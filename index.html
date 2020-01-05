@@ -5,11 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name = "google-signin-client_id" content = "978366753912-vmerfbd1vnlptm9detkbf6ciau6j21p9.apps.googleusercontent.com">
   <title>Simple Piskel Clone</title>
-  <!-- <script src="https://apis.google.com/js/platform.js" async defer></script> -->
-  <!-- <script src="https://apis.google.com/js/platform.js?onload=init" async="" defer="" gapi_processed="true"></script> -->
-  <script src="https://apis.google.com/js/api.js"></script>
+  <meta name="google-signin-client_id" content="978366753912-vmerfbd1vnlptm9detkbf6ciau6j21p9.apps.googleusercontent.com">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
 <link href="style.css" rel="stylesheet"></head>
 
 <body>
@@ -20,6 +18,7 @@
       </button>
       <h1 class="header__title"><a href="#">Simple Piskel Clone</a></h1>
       <div class="g-signin2" data-onsuccess="onSignIn"></div>
+      <a href="#" onclick="signOut();">Sign out</a>
       <button class="header__dropdown--options">
         <img src="images/options.png" alt="options" width="12" height="24">
       </button>
