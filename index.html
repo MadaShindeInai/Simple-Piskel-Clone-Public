@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Simple Piskel Clone</title>
-  <meta name="google-signin-client_id" content="978366753912-vmerfbd1vnlptm9detkbf6ciau6j21p9.apps.googleusercontent.com">
+  <meta name="google-signin-client_id"
+    content="978366753912-vmerfbd1vnlptm9detkbf6ciau6j21p9.apps.googleusercontent.com">
   <script src="https://apis.google.com/js/platform.js" async defer></script>
 <link href="style.css" rel="stylesheet"></head>
 
@@ -18,7 +19,16 @@
       </button>
       <h1 class="header__title"><a href="#">Simple Piskel Clone</a></h1>
       <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
       <a href="#" onclick="signOut();">Sign out</a>
+      <script>
+        function signOut() {
+          var auth2 = gapi.auth2.getAuthInstance();
+          auth2.signOut().then(function () {
+            console.log('User signed out.');
+          });
+        }
+      </script>
       <button class="header__dropdown--options">
         <img src="images/options.png" alt="options" width="12" height="24">
       </button>
@@ -29,7 +39,7 @@
     <section class="work-place">
       <ul class="work-place__tool-bar">
         <li class="button pencil active" onmousedown="return false" onselectstart="return false">
-          <img  class="pencil" src="images/pencil.png" alt="move" width="24" height="24">
+          <img class="pencil" src="images/pencil.png" alt="move" width="24" height="24">
           <span class="tool-bar__text pencil">Pencil</span>
         </li>
 
@@ -44,7 +54,7 @@
         </li>
 
         <li class="button eraser" onmousedown="return false" onselectstart="return false">
-          <img  class="eraser" src="images/eraser.png" alt="eraser" width="24" height="24">
+          <img class="eraser" src="images/eraser.png" alt="eraser" width="24" height="24">
           <span class="tool-bar__text eraser">Eraser</span>
         </li>
 
@@ -88,16 +98,16 @@
 
     <section class="frames scroll-container" tabindex="1">
       <div class="frames__item">
-        <ul >
+        <ul>
           <li class="button button--XL">Add new frame</li>
         </ul>
       </div>
     </section>
 
-    <section  class="canvas__wraper">
+    <section class="canvas__wraper">
       <div class="canvas">
-      <canvas class="canvas-field" width="512" height="512"></canvas>
-    </div>
+        <canvas class="canvas-field" width="512" height="512"></canvas>
+      </div>
     </section>
 
     <section class="animation-preview">
@@ -124,7 +134,7 @@
           <span class="canvas-size__label">X</span>
           <span class="canvas-size__number">1</span>
         </p>
-        <input type="range" value="800" class="canvas-size__input-px" min="32" max="800" >
+        <input type="range" value="800" class="canvas-size__input-px" min="32" max="800">
       </div>
 
       <ul class="canvas-size__tool-bar">
@@ -140,10 +150,10 @@
           <span class="tool-bar__text sizeL">128x128</span>
         </li>
         <li class="button getGif" onmousedown="return false" onselectstart="return false">
-          <span class="tool-bar__text getGif" download >gefGif</span>
+          <span class="tool-bar__text getGif" download>gefGif</span>
         </li>
         <li class="button getApng" onmousedown="return false" onselectstart="return false">
-          <span class="tool-bar__text getApng" download >getApng</span>
+          <span class="tool-bar__text getApng" download>getApng</span>
         </li>
 
       </ul>
