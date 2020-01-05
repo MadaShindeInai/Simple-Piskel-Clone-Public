@@ -18,17 +18,25 @@
         <img src="images/menu.png" alt="menu" width="24" height="24">
       </button>
       <h1 class="header__title"><a href="#">Simple Piskel Clone</a></h1>
-      <div class="g-signin2" data-onsuccess="onSignIn"></div>
+      <!--  <div class="g-signin2" data-onsuccess="onSignIn"></!-->
 
-      <a href="#" onclick="signOut();">Sign out</a>
-      <script>
+      <!--  <a href="#" onclick="signOut();">Sign out</!-->
+      <!-- <script>
         function signOut() {
           var auth2 = gapi.auth2.getAuthInstance();
           auth2.signOut().then(function () {
             console.log('User signed out.');
           });
         }
-      </script>
+      </script> -->
+      <button id="logIn">Log In</button>
+      <div id="userInfo">
+        <img id="userImg">
+        <span id="userName">
+
+        </span>
+      </div>
+      <button id="logOut">Log Out</button>
       <button class="header__dropdown--options">
         <img src="images/options.png" alt="options" width="12" height="24">
       </button>

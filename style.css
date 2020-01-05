@@ -442,6 +442,49 @@ ul {
   border: 0;
   cursor: pointer; }
 
+.header #logIn,
+.header #logOut {
+  width: 80px;
+  height: 30px;
+  font-size: 14pt;
+  color: white;
+  background-color: #9555af;
+  border: solid 1px transparent;
+  border-radius: 5px;
+  cursor: pointer; }
+
+.header #userInfo {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  width: 153px;
+  height: 30px;
+  margin-left: 832px;
+  font-size: 16pt;
+  color: #9555af;
+  background-color: white;
+  border: solid 1px transparent;
+  border-color: currentColor;
+  border-radius: 5px;
+  cursor: pointer; }
+
+.header #userInfo #userImg {
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  margin-left: 5px; }
+
+.header #logIn,
+.header #logOut {
+  width: 80px;
+  height: 30px;
+  font-size: 14pt;
+  color: white;
+  background-color: #9555af;
+  border: solid 1px transparent;
+  border-radius: 5px;
+  cursor: pointer; }
+
 .main {
   display: grid;
   width: 100%;
