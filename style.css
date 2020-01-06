@@ -403,6 +403,9 @@ h6 {
 .strokeCursor {
   cursor: url(images/stroke.png), auto; }
 
+.rectangleCursor {
+  cursor: url(images/rectangle.png), auto; }
+
 .button,
 label {
   display: flex;
