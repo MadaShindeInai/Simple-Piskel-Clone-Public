@@ -481,6 +481,7 @@ ul {
 .header #logOut {
   width: 80px;
   height: 30px;
+  margin-right: 5px;
   font-size: 14pt;
   color: white;
   background-color: #c533a1;
