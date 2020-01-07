@@ -461,6 +461,8 @@ ul {
   flex-direction: row;
   align-items: center;
   height: 30px;
+  margin-right: 20px;
+  padding-right: 5px;
   font-size: 16pt;
   color: #c533a1;
   background-color: white;
@@ -473,7 +475,6 @@ ul {
   align-items: center;
   width: 25px;
   height: 25px;
-  margin-right: 5px;
   margin-left: 5px; }
 
 .header #logIn,
@@ -486,6 +487,9 @@ ul {
   border: solid 1px transparent;
   border-radius: 5px;
   cursor: pointer; }
+
+.login-google-wrapper {
+  display: flex; }
 
 .main {
   display: grid;
