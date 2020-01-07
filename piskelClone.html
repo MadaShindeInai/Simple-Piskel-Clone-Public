@@ -9,7 +9,7 @@
   <meta name="google-signin-client_id"
     content="978366753912-eslhpgag4jfg2tbkai9tr2erjup92tou.apps.googleusercontent.com">
   <script src="https://apis.google.com/js/platform.js" async defer></script>
-<link href="style.css" rel="stylesheet"></head>
+<link href="app.css" rel="stylesheet"></head>
 
 <body>
   <header class="header">
@@ -151,11 +151,125 @@
         <li class="button getApng" onmousedown="return false" onselectstart="return false">
           <span class="tool-bar__text getApng" download>getApng</span>
         </li>
+        <li class="modal-show" data-title="Keyboard shortcuts. Click me">
+          <img class="keyboard modal-show" src="images/keyboard.png" alt="move" width="100" height="100">
+        </li>
+        <div class="modal" id="modal">
+          <div class="modal-content">
+            <span class="modal-hide">✕</span>
+            <div class="modal-header">
+              <h2 class="modal-header__title">Keyboard shortcuts</h2>
+            </div>
+            <div class="modal-body">
+              <h3 class="modal-body__title">Tool shortcuts</h3>
+              <ul>
+                <li class="modal-body__item">
+                  <img class="pencil" src="images/pencil.png" alt="move" width="24" height="24">
+                  <span class="item__hot-key">Alt + K</span>
+                  <span class="item__label">Pencil</span>
+                </li>
+                <li class="modal-body__item">
+                  <img class="chooseColor" src="images/pipette.png" alt="pipe" width="24" height="24">
+                  <span class="item__hot-key">Alt + C</span>
+                  <span class="tool-bar__text chooseColor">Choose color</span>
+                </li>
+                <li class="modal-body__item">
+                  <img class="paintBucket" src="images/bucket.png" alt="bucket" width="24" height="24">
+                  <span class="item__hot-key">Alt + B</span>
+                  <span class="item__label">Paint bucket</span>
+                </li>
+                <li class="modal-body__item">
+                  <img class="eraser" src="images/eraser.png" alt="eraser" width="24" height="24">
+                  <span class="item__hot-key">Alt + H</span>
+                  <span class="item__label">Eraser</span>
+                </li>
+
+                <li class="modal-body__item">
+                  <img class="line" src="images/stroke.png" alt="line" width="24" height="24">
+                  <span class="item__hot-key">Alt + L</span>
+                  <span class="item__label">Stroke</span>
+                </li>
+
+                <li class="modal-body__item">
+                  <img class="rectangle" src="images/rectangle.png" alt="rectangle" width="24" height="24">
+                  <span class="item__hot-key">Alt + R</span>
+                  <span class="item__label">Rectangle</span>
+                </li>
+              </ul>
+
+              <h3 class="modal-body__title">Color shortcuts</h3>
+              <ul>
+                <li class="modal-body__item">
+                  <span class="item__hot-key item__hot-key--color">Alt + 1</span>
+                  <span class="item__label">Previous color</span>
+                </li>
+
+                <li class="modal-body__item">
+                  <span class="item__hot-key item__hot-key--color">Alt + 2</span>
+                  <span class="item__label">Red</span>
+                </li>
+
+                <li class="modal-body__item">
+                  <span class="item__hot-key item__hot-key--color">Alt + 3</span>
+                  <span class="item__label">Blue</span>
+                </li>
+
+
+                <li class="modal-body__item">
+                  <span class="item__hot-key item__hot-key--color">Alt + 4</span>
+                  <span class="item__label">B&W</span>
+                </li>
+              </ul>
+              <h3 class="modal-body__title">Frame shortcuts</h3>
+              <ul>
+                <li class="modal-body__item">
+                  <span class="item__hot-key item__hot-key--color">Alt + A</span>
+                  <span class="item__label">Add frame</span>
+                </li>
+              </ul>
+              <h3 class="modal-body__title">Canvas size shortcuts</h3>
+              <ul>
+                <li class="modal-body__item">
+                  <span class="item__hot-key item__hot-key--color">Alt + 5</span>
+                  <span class="item__label">128 x 128</span>
+                </li>
+                <li class="modal-body__item">
+                  <span class="item__hot-key item__hot-key--color">Alt + 6</span>
+                  <span class="item__label">64 x 64</span>
+                </li>
+                <li class="modal-body__item">
+                  <span class="item__hot-key item__hot-key--color">Alt + 7</span>
+                  <span class="item__label">32 x 32</span>
+                </li>
+              </ul>
+              <h3 class="modal-body__title">Download shortcuts</h3>
+              <ul>
+                <li class="modal-body__item">
+                  <span class="item__hot-key item__hot-key--color">Alt + 8</span>
+                  <span class="item__label">Download .gif</span>
+                </li>
+                <li class="modal-body__item">
+                  <span class="item__hot-key item__hot-key--color">Alt + 9</span>
+                  <span class="item__label">Download .apng</span>
+                </li>
+              </ul>
+              <h3 class="modal-body__title">View shortcuts</h3>
+              <ul>
+                <li class="modal-body__item">
+                  <span class="item__hot-key item__hot-key--color">F11</span>
+                  <span class="item__label">Full screen</span>
+                </li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+            </div>
+          </div>
+        </div>
 
       </ul>
     </section>
 
   </main>
-<script type="text/javascript" src="bundle.js"></script></body>
+<script type="text/javascript" src="app.js"></script></body>
 
 </html>
