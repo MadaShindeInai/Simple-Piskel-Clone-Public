@@ -460,9 +460,7 @@ ul {
   display: none;
   flex-direction: row;
   align-items: center;
-  width: 153px;
   height: 30px;
-  margin-left: 832px;
   font-size: 16pt;
   color: #c533a1;
   background-color: white;
@@ -475,6 +473,7 @@ ul {
   align-items: center;
   width: 25px;
   height: 25px;
+  margin-right: 5px;
   margin-left: 5px; }
 
 .header #logIn,
