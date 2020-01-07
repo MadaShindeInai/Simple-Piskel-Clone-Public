@@ -410,7 +410,7 @@ h6 {
 label {
   display: flex;
   margin-bottom: 10px;
-  padding: 1rem;
+  padding: 0.5rem;
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.25); }
   .button:active,
   label:active {
@@ -464,7 +464,7 @@ ul {
   margin-right: 20px;
   padding-right: 5px;
   font-size: 16pt;
-  color: #c533a1;
+  color: #bb7fff;
   background-color: white;
   border: solid 1px transparent;
   border-color: currentColor;
@@ -484,13 +484,16 @@ ul {
   margin-right: 5px;
   font-size: 14pt;
   color: white;
-  background-color: #c533a1;
+  background-color: #bb7fff;
   border: solid 1px transparent;
   border-radius: 5px;
   cursor: pointer; }
 
 .login-google-wrapper {
   display: flex; }
+
+.header #logOut {
+  display: none; }
 
 .main {
   display: grid;
